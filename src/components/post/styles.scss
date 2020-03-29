@@ -1,0 +1,58 @@
+@import '../../App.scss';
+
+.post_container {
+  margin: 20px;
+  border: 2px solid white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #dddddd;
+
+  flex: 1 1 27%;
+
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    color: #053b56;
+    padding: 20px;
+    display: flex;
+
+    > span {
+      margin-left: 10px;
+    }
+
+    border-bottom: 1px solid #2e506f;
+  }
+
+  .content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    .body {
+      flex: 1;
+      color: #2e506f;
+      font-size: 14px;
+    }
+
+    a {
+      cursor: pointer;
+      margin-top: 20px;
+      align-self: flex-end;
+      text-transform: uppercase;
+      font-size: 11px;
+      color: #026ccc;
+      font-weight: 700;
+      text-decoration: none;
+
+      @include app_link(#026ccc);
+
+      > i {
+        margin-right: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+html {
+  box-sizing: border-box;
+  min-height: 100%;
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-weight: normal;
+}
+
+body {
+  font-family: 'Lato';
+  font-size: 16px;
+  line-height: 24px;
+  min-height: 100%;
+  margin: 0;
+  background-color: #f2f2f2;
+  color: #174672;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+#root {
+  height: 100%;
+  min-height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  flex: 1;
+}
+
+@mixin app_link($color) {
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+
+  &:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: $color;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+
+  &:hover:after {
+    width: 100%;
+    left: 0;
+  }
+}
