@@ -1,6 +1,6 @@
 ## Feed Challenge Documentation
 
-- Features currently suppored:<br />
+- Features currently supported:<br />
   -- Displaying List of Posts fetched from the endpoint (route : /posts)<br />
   -- Each of this posts has a link to navigate to the Comments page<br />
   -- In the Comments Page, we list all the comments fetched from the api (and save on our redux)<br />
