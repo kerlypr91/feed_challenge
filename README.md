@@ -1,4 +1,30 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Feed Challenge Documentation
+
+- Features currently suppored:
+  -- Displaying List of Posts fetched from the endpoint (route : /posts)
+  -- Each of this posts has a link to navigate to the Comments page
+  -- In the Comments Page, we list all the comments fetched from the api (and save on our redux)
+  -- In the Comments Page, we have a section to add a new comment per post (and saved to our redux)
+  -- Responsive design
+
+- Libraries added to project:
+  -- APISAUCE -> to make api calls to the endpoints given
+  -- SASS -> for styling
+  -- REDUX -> for app state managemente
+  -- REDUX SAGA -> to handle action effects
+  -- FONT AWESOME -> to display some icons
+  -- PROPTYPES -> to validate props passed to our components
+  -- REACT ROUTER -> to navigate withing the routes build for our app
+
+- The project has been divided into different folders:
+  -- API : where the endpoints calls and urls are saved and called
+  -- Actions
+  -- Reducers
+  -- Stores
+  -- Sagas
+  -- Components: smallest elements that could be used among the app
+  -- Containers: this ones are the screens per route we built. The Main Container is the one that has inside the router and the "layout" styles shared among our screens, like for example including a footer
+  -- There is one route.js file in the root folder, so it's easier to mantain and declare routes. Each of those routes is paired with each component
 
 ## Available Scripts
 
@@ -27,42 +53,4 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
