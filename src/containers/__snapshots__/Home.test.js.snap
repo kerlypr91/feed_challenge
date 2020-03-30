@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Tests should match snapshot 1`] = `
+<div
+  className="home_container"
+>
+  <i
+    className="fa fa-reddit-alien"
+  />
+  <span
+    className="welcome"
+  >
+    Welcome to the Feed Challenge
+  </span>
+  <span
+    className="link"
+    id="link"
+    onClick={[Function]}
+  >
+    <i
+      className="fa fa-external-link"
+    />
+    Click here to see latest posts
+  </span>
+</div>
+`;

@@ -63,7 +63,6 @@ export class PostList extends Component {
           }
         </div>
       </React.Fragment>
-
     )
   }
 

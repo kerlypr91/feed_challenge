@@ -6,6 +6,7 @@
   -- In the Comments Page, we list all the comments fetched from the api (and save on our redux)<br />
   -- In the Comments Page, we have a section to add a new comment per post (and saved to our redux)<br />
   -- Responsive design<br />
+  -- Added some tests for Home and Post List Containers - snapshots and functionality<br />
 
 - Libraries added to project:<br />
   -- APISAUCE -> to make api calls to the endpoints given<br />

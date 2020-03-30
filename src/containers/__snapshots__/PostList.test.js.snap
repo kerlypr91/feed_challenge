@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PostList Tests should match snapshot - loader container 1`] = `
+<div
+  className="loader_container"
+>
+  <Loader />
+</div>
+`;
+
+exports[`PostList Tests should match snapshot - post list container 1`] = `
+<Fragment>
+  <div
+    className="post_title"
+  >
+    <i
+      className="fa fa-reddit"
+    />
+        POSTS FEED
+  </div>
+  <div
+    className="post_list"
+  >
+    <Post
+      body="Body 1"
+      id={1}
+      key="1"
+      onCommentLinkClick={[Function]}
+      title="Title 1"
+    />
+    <Post
+      body="Body 2"
+      id={2}
+      key="2"
+      onCommentLinkClick={[Function]}
+      title="Title 2"
+    />
+  </div>
+</Fragment>
+`;
